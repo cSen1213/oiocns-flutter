@@ -12,7 +12,7 @@ import 'package:orginone/pages/other/center/center_controller.dart';
 import 'package:orginone/routers.dart';
 
 enum Functions {
-  addFriends("加好友", Routers.friendAdd),
+  addFriends("加好友", Routers.myAssets), //friendAdd
   createUnits("创单位", Routers.unitCreate),
   inviteMembers("邀成员", Routers.unitCreate),
   createApplication("建应用", Routers.unitCreate),
@@ -116,15 +116,15 @@ class CenterPage extends GetView<CenterController> {
                       crossAxisCount: 5,
                       childAspectRatio: 80 / 100,
                       children: [
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
-                        _applicationEntry("资产应用"),
+                        _applicationEntry("我的资产"),
+                        _applicationEntry("资产领用"),
+                        _applicationEntry("资产处置"),
+                        _applicationEntry("资产移交"),
+                        _applicationEntry("资产申领"),
+                        _applicationEntry("资产盘点"),
+                        _applicationEntry("资产交回"),
+                        _applicationEntry("接收确认"),
+                        _applicationEntry("物品领用"),
                         _applicationEntry("更多", iconData: Icons.add)
                       ],
                     ),

@@ -76,6 +76,9 @@ import 'package:orginone/pages/setting/unit/unit_create/unit_create_page.dart';
 import 'package:orginone/pages/setting/unit/unit_detail/unit_detail_page.dart';
 import 'package:orginone/pages/work/affairs/detail/affairs_detail.dart';
 import 'package:orginone/pages/work/affairs/detail/affairs_detail_binding.dart';
+//业务路由
+import 'package:orginone/pages/assetMannage/myAssets.dart';
+import 'package:orginone/pages/assetMannage/myAssets_binding.dart';
 
 class Routers {
   static const String main = "/";
@@ -132,6 +135,9 @@ class Routers {
 
   //设置
   static const String version = "/version";
+
+  //业务路由
+  static const String myAssets = "/myAssets";
 
   static List<GetPage> getInitRouters() {
     return [
@@ -374,6 +380,11 @@ class Routers {
         name: Routers.publisher,
         page: () => PublisherPage(),
         binding: PublisherBinding(),
+      ),
+      GetPage(
+        name: Routers.myAssets,
+        page: () => MyAssets(),
+        binding: MyAssetsBinding(),
       ),
     ];
   }
